@@ -1,9 +1,11 @@
 :root {
   --white-text: #ffffff;
+  --header-font: 2.5em;
 }
 
 html {
   font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
 }
 
 body {
@@ -35,9 +37,50 @@ nav {
 
 nav div {
   color: var(--white-text);
-  font-size: 2.5em;
-  padding: 1.5em;
+  font-size: 3.5em;
+  padding: 1em;
   margin: 0.2;
+}
+
+main {
+  margin-top: 10em;
+}
+
+.container {
+  display: flex;
+  flex: 1, 0, 80%;
+  color: var(--white-text);
+}
+
+.heading--container {
+  margin: 2em 2em 2em 2em;
+}
+
+.heading--container h2 {
+  font-size: var(--header-font);
+  text-align: center;
+  margin: 1em;
+}
+
+.about-me {
+  display: block;
+}
+
+.about-me div {
+  font-size: 1.5em;
+  padding: 0.5em;
+  text-align: justify;
+  max-width: 100vw;
+  margin: 1em 3em;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  nav,
+  .container {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -53,12 +96,5 @@ nav div {
     padding: 0.5em;
     font-size: 1.5em;
     align-self: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  header,
-  nav {
-    flex-direction: column;
   }
 }
