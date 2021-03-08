@@ -62,11 +62,17 @@ main {
   margin: 1em;
 }
 
-.about-me {
+.about-me--container {
   display: block;
 }
 
-.about-me div {
+.profile-photo {
+  max-width: 200px;
+  border-radius: 60%;
+  filter: grayscale(100%);
+}
+
+.about-me--container div {
   font-size: 1.5em;
   padding: 0.5em;
   text-align: justify;
