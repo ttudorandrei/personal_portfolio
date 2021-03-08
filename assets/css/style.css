@@ -3,13 +3,12 @@
 }
 
 html {
-  padding: 0;
-  margin: 0;
-  font-size: 10px;
   font-family: "Courier New", Courier, monospace;
 }
 
 body {
+  padding: 0;
+  margin: 0;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.2),
@@ -22,16 +21,44 @@ body {
   height: 100vh;
 }
 
+header {
+  display: flex;
+  padding: 2em;
+}
+
 nav {
   display: flex;
-  justify-content: space-evenly;
-  flex: 0, 1, 0;
-  color: var(--white-text);
+  justify-content: center;
   font-weight: 500;
+  flex-grow: 1;
 }
 
 nav div {
   color: var(--white-text);
   font-size: 2.5em;
-  padding-top: 1em;
+  padding: 1.5em;
+  margin: 0.2;
+}
+
+@media screen and (max-width: 1024px) {
+  nav div {
+    padding: 1;
+    font-size: 2em;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav div {
+    padding: 0.5em;
+    font-size: 1.5em;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  nav {
+    flex-direction: column;
+  }
 }
