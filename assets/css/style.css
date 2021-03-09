@@ -79,7 +79,8 @@ main {
   filter: grayscale(0%);
 }
 
-.about-me--container div {
+.about-me--container div,
+.item--portfolio {
   font-size: 2em;
   padding: 0.5em;
   text-align: justify;
@@ -87,6 +88,7 @@ main {
   margin: 1em 3em;
   justify-content: center;
   flex: 1 0 80%;
+  border: 1px solid red;
 }
 
 .contact {
@@ -98,6 +100,11 @@ main {
 .contact-img {
   display: inline;
   margin: 0em 2em 0em 2em;
+}
+
+.portfolio--container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -121,6 +128,10 @@ main {
     padding: 0.5em;
     font-size: 1.5em;
     align-self: center;
+  }
+
+  .item--portfolio {
+    flex-basis: 70%;
   }
 }
 
