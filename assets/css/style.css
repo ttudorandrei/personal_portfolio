@@ -54,6 +54,14 @@ main {
   justify-content: center;
 }
 
+footer {
+  text-align: center;
+  color: var(--white-text);
+  font-size: 1.5em;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+}
+
 .container {
   display: flex;
   flex: 1, 0, auto;
@@ -101,7 +109,6 @@ main {
 }
 
 .contact-img {
-  display: inline;
   margin: 0em 2em 0em 2em;
 }
 
@@ -121,9 +128,6 @@ main {
   flex: 0 1 30%;
 }
 
-.portfolio-image--portfolio {
-}
-
 .portfolio-image--portfolio a img,
 .portfolio-image--portfolio img {
   width: 100%;
@@ -140,14 +144,6 @@ main {
 .portfolio-description--portfolio {
   font-size: 1.3em;
   text-align: center;
-}
-
-footer {
-  text-align: center;
-  color: var(--white-text);
-  font-size: 1.5em;
-  margin-top: 2.5em;
-  margin-bottom: 2em;
 }
 
 .profile-photo:hover {
