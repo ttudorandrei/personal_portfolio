@@ -138,6 +138,14 @@ main {
   text-align: center;
 }
 
+footer {
+  text-align: center;
+  color: var(--white-text);
+  font-size: 1.5em;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+}
+
 @media screen and (max-width: 768px) {
   header,
   nav,
