@@ -190,6 +190,12 @@ a:hover {
   .item--portfolio {
     flex-basis: 70%;
   }
+
+  .portfolio--container,
+  .about-me--container {
+    justify-content: center;
+  }
+
   #first-project {
     flex-basis: 70%;
   }
