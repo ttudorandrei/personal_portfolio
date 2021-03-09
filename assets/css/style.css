@@ -158,6 +158,7 @@ a:hover {
 
 .item--portfolio:hover {
   transform: scale(1.1);
+  border: 0.5px solid aqua;
 }
 
 @media screen and (max-width: 768px) {
