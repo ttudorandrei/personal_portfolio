@@ -8,6 +8,12 @@ html {
   font-size: 10px;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -75,10 +81,7 @@ main {
   max-width: 200px;
   border-radius: 60%;
   filter: grayscale(100%);
-}
-
-.profile-photo:hover {
-  filter: grayscale(0%);
+  transition: 0.5s ease-in-out;
 }
 
 .about-me--container div {
@@ -111,6 +114,7 @@ main {
   flex: 0 1 25%;
   justify-content: center;
   margin: 1em 2em 1em 2em;
+  transition: all 0.2s ease-in-out;
 }
 
 #first-project {
@@ -144,6 +148,20 @@ footer {
   font-size: 1.5em;
   margin-top: 2.5em;
   margin-bottom: 2em;
+}
+
+.profile-photo:hover {
+  filter: grayscale(0%);
+  border-radius: 40%;
+  transition: 1s ease-in-out;
+}
+
+a:hover {
+  color: aqua;
+}
+
+.item--portfolio:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
