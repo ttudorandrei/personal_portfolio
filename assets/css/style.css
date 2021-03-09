@@ -50,7 +50,7 @@ main {
 
 .container {
   display: flex;
-  flex: 1, 0, 80%;
+  flex: 1, 0, auto;
   color: var(--white-text);
 }
 
@@ -60,13 +60,14 @@ main {
 
 .heading--container h2 {
   font-size: var(--header-font);
-  text-align: center;
   margin: 1em;
   font-weight: normal;
 }
 
 .about-me--container {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vw;
 }
 
 .profile-photo {
@@ -77,7 +78,6 @@ main {
 
 .profile-photo:hover {
   filter: grayscale(0%);
-  max-width: 199px;
 }
 
 .about-me--container div {
@@ -87,17 +87,18 @@ main {
   max-width: 1500px;
   margin: 1em 3em;
   justify-content: center;
+  flex: 1 0 80%;
 }
 
 .contact {
   display: flex;
   justify-content: center;
+  flex: 1 0 80%;
 }
 
 .contact-img {
   display: inline;
   margin: 0em 2em 0em 2em;
-  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
