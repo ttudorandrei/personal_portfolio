@@ -175,9 +175,7 @@ a:hover {
   .container {
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 768px) {
   nav div {
     padding: 0.5em;
     font-size: 1.5em;
