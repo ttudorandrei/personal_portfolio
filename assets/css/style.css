@@ -161,19 +161,19 @@ a:hover {
   border: 0.5px solid aqua;
 }
 
-@media screen and (max-width: 768px) {
-  header,
-  nav,
-  .container {
-    flex-direction: column;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   nav div {
     padding: 1;
     font-size: 2em;
     align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  nav,
+  .container {
+    flex-direction: column;
   }
 }
 
