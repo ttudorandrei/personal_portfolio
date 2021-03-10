@@ -3,6 +3,8 @@
   --header-font: 3.5em;
 }
 
+/* Styles for the main elements of the page */
+
 html {
   font-family: "Courier New", Courier, monospace;
   font-size: 10px;
@@ -125,6 +127,7 @@ footer {
   filter: grayscale(100%);
 }
 
+/* Styles for the first project. Makes the image slightly bigger compared to the other */
 #first-project {
   flex: 0 1 30%;
 }
@@ -153,10 +156,12 @@ footer {
   transition: 1s ease-in-out;
 }
 
+/* Colors links in navbar on hover */
 a:hover {
   color: aqua;
 }
 
+/* Adds scale property and removes filter on portfolio items  */
 .item--portfolio:hover {
   transform: scale(1.1);
   border: 0.5px solid aqua;
@@ -164,6 +169,7 @@ a:hover {
   transition: 0.3s ease-in-out;
 }
 
+/* Adds media query properties for different viewport sizes */
 @media screen and (max-width: 1024px) {
   nav div {
     padding: 1;
