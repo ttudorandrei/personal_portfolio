@@ -163,7 +163,6 @@ a:hover {
 /* Adds scale property and removes filter on portfolio items  */
 .item--portfolio:hover {
   transform: scale(1.1);
-  border: 0.5px solid aqua;
   filter: grayscale(0%);
   transition: 0.3s ease-in-out;
 }
