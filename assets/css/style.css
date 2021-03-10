@@ -122,6 +122,7 @@ footer {
   justify-content: center;
   margin: 1em 2em 1em 2em;
   transition: all 0.2s ease-in-out;
+  filter: grayscale(100%);
 }
 
 #first-project {
@@ -159,6 +160,8 @@ a:hover {
 .item--portfolio:hover {
   transform: scale(1.1);
   border: 0.5px solid aqua;
+  filter: grayscale(0%);
+  transition: 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1024px) {
