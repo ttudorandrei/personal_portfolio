@@ -167,9 +167,7 @@ a:hover {
     font-size: 2em;
     align-self: center;
   }
-}
 
-@media screen and (max-width: 768px) {
   header,
   nav,
   .container {
@@ -182,13 +180,15 @@ a:hover {
     align-self: center;
   }
 
-  .item--portfolio {
-    flex-basis: 70%;
-  }
-
   .portfolio--container,
   .about-me--container {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item--portfolio {
+    flex-basis: 70%;
   }
 
   #first-project {
