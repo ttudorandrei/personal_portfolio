@@ -73,7 +73,7 @@ footer {
   margin: 2em 2em 2em 2em;
 }
 
-.heading--container h2 {
+.heading--container h1 {
   font-size: var(--header-font);
   margin: 1em;
   font-weight: normal;
