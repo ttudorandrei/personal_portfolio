@@ -147,11 +147,6 @@ footer {
   align-items: center;
 }
 
-/* Styles for the first project. Makes the image slightly bigger compared to the other */
-#first-project {
-  flex: 0 1 30%;
-}
-
 .portfolio-image--portfolio a img,
 .portfolio-image--portfolio img {
   width: 100%;
@@ -168,6 +163,12 @@ footer {
 .portfolio-description--portfolio {
   font-size: 1.3em;
   text-align: center;
+}
+
+.portfolio-github--portfolio {
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 7px;
 }
 
 .profile-photo:hover {
@@ -220,10 +221,6 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .item--portfolio {
-    flex-basis: 70%;
-  }
-
-  #first-project {
     flex-basis: 70%;
   }
 }
