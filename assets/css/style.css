@@ -80,10 +80,12 @@ footer {
 }
 
 .about-me--container,
-.portfolio--container {
+.portfolio--container,
+.contact--container {
   display: flex;
   flex-wrap: wrap;
   flex: 1 0 80%;
+  color: var(--white-text);
 }
 
 .profile-photo {
@@ -103,6 +105,13 @@ footer {
   flex: 1 0 80%;
 }
 
+.about-me--container .reach-me {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .contact {
   display: flex;
   justify-content: center;
@@ -110,7 +119,15 @@ footer {
 }
 
 .contact-img {
-  margin: 0em 2em 0em 2em;
+  margin: 1em 2em 1em 2em;
+}
+
+.item--contact {
+  font-size: 2em;
+}
+
+.downloadable-resume {
+  color: aqua;
 }
 
 .portfolio--container {
@@ -124,6 +141,10 @@ footer {
   margin: 1em 2em 1em 2em;
   transition: all 0.2s ease-in-out;
   filter: grayscale(100%);
+}
+
+.v-align {
+  align-items: center;
 }
 
 /* Styles for the first project. Makes the image slightly bigger compared to the other */
@@ -153,6 +174,10 @@ footer {
   filter: grayscale(0%);
   border-radius: 40%;
   transition: 1s ease-in-out;
+}
+
+.border-test {
+  border: 1px solid red;
 }
 
 /* Colors links in navbar on hover */
